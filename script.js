@@ -1,6 +1,7 @@
 let currentInput = '';
 let previousInput = '';
 let operator = null;
+let memory = 0;
 
 function updateDisplay() {
     document.getElementById('display').value = currentInput || previousInput || '0';
@@ -34,7 +35,7 @@ function setOperation(op) {
 
 function calculateResult() {
     if (currentInput === '' || previousInput === '') return;
-    
+
     let result;
     const prev = parseFloat(previousInput);
     const current = parseFloat(currentInput);
@@ -52,6 +53,15 @@ function calculateResult() {
         case '/':
             result = prev / current;
             break;
+        case '%':
+            result = prev % current;
+            break;
+        case '√':
+            result = Math.sqrt(current);
+            break;
+        case '^':
+            result = Math.pow(prev, current);
+            break;
         default:
             return;
     }
@@ -67,4 +77,18 @@ function clearDisplay() {
     previousInput = '';
     operator = null;
     updateDisplay();
+}
+
+// Funções de memória
+function memoryRecall() {
+    currentInput = memory.toString();
+    updateDisplay();
+}
+
+function memoryClear() {
+    memory = 0;
+}
+
+function memoryStore() {
+    memory = parseFloat(currentInput);
 }
