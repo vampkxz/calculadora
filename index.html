@@ -12,43 +12,22 @@
             <input type="text" id="display" disabled />
         </div>
         <div class="buttons">
-            <!-- Primeira linha de botões -->
+            <!-- Botões para Memória -->
             <button class="btn clear" onclick="clearDisplay()">C</button>
             <button class="btn memory" onclick="memoryRecall()">MR</button>
             <button class="btn memory" onclick="memoryClear()">MC</button>
             <button class="btn memory" onclick="memoryStore()">MS</button>
 
-            <!-- Segunda linha de botões -->
+            <!-- Operações -->
             <button class="btn operator" onclick="setOperation('%')">%</button>
             <button class="btn operator" onclick="setOperation('√')">√</button>
             <button class="btn operator" onclick="setOperation('^')">^</button>
             <button class="btn operator" onclick="setOperation('/')">/</button>
 
-            <!-- Terceira linha de botões -->
+            <!-- Números -->
             <button class="btn" onclick="appendNumber('7')">7</button>
             <button class="btn" onclick="appendNumber('8')">8</button>
             <button class="btn" onclick="appendNumber('9')">9</button>
             <button class="btn operator" onclick="setOperation('*')">*</button>
 
-            <!-- Quarta linha de botões -->
-            <button class="btn" onclick="appendNumber('4')">4</button>
-            <button class="btn" onclick="appendNumber('5')">5</button>
-            <button class="btn" onclick="appendNumber('6')">6</button>
-            <button class="btn operator" onclick="setOperation('-')">-</button>
-
-            <!-- Quinta linha de botões -->
-            <button class="btn" onclick="appendNumber('1')">1</button>
-            <button class="btn" onclick="appendNumber('2')">2</button>
-            <button class="btn" onclick="appendNumber('3')">3</button>
-            <button class="btn operator" onclick="setOperation('+')">+</button>
-
-            <!-- Linha inferior de botões -->
-            <button class="btn" onclick="appendNumber('0')">0</button>
-            <button class="btn decimal" onclick="appendDecimal()">.</button>
-            <button class="btn equal" onclick="calculateResult()">=</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <button class="btn" onclick="appendNumber('4')">4</
