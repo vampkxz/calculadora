@@ -1,8 +1,8 @@
-/* Estilos do corpo da página e da calculadora */
+/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Tema escuro */
-    color: #fff;
+    background-color: #121212; /* Fundo escuro */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
