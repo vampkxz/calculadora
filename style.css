@@ -1,36 +1,37 @@
-/* Cor de fundo e fonte */
+/* Estilos do corpo da página e da calculadora */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Cor escura de fundo */
+    background-color: #121212; /* Tema escuro */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #fff; /* Cor do texto branca para contraste */
 }
 
 .calculator {
-    width: 260px;
+    width: 320px;
+    background-color: #1e1e1e;
     border-radius: 10px;
-    background-color: #1e1e1e; /* Cor escura para o fundo da calculadora */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
-#display {
+.display input {
     width: 100%;
-    height: 50px;
+    height: 60px;
     font-size: 2rem;
     text-align: right;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 2px solid #333; /* Cor mais clara para borda */
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
     border-radius: 5px;
-    background-color: #2c2c2c; /* Fundo mais escuro para o visor */
-    color: #fff; /* Texto claro no visor */
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
+/* Estilos dos botões */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -38,27 +39,27 @@ body {
 }
 
 button {
-    background-color: #333; /* Cor escura para os botões */
+    background-color: #333;
     border: none;
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    color: #fff; /* Texto branco para os botões */
+    color: white;
 }
 
 button:hover {
-    background-color: #444; /* Cor mais clara no hover */
+    background-color: #444;
 }
 
 button:active {
-    background-color: #555; /* Cor ainda mais clara quando pressionado */
+    background-color: #555;
 }
 
+/* Estilos dos botões de operação */
 button.operator {
-    background-color: #ff9500; /* Cor laranja para os operadores */
-    color: white;
+    background-color: #ff9500;
 }
 
 button.operator:hover {
@@ -66,8 +67,7 @@ button.operator:hover {
 }
 
 button.equal {
-    background-color: #4CAF50; /* Cor verde para o botão de "=" */
-    color: white;
+    background-color: #4CAF50;
     grid-column: span 4;
 }
 
@@ -75,7 +75,26 @@ button.equal:hover {
     background-color: #45a049;
 }
 
-button:disabled {
-    background-color: #555; /* Cor desabilitada */
-    color: #888; /* Cor do texto desabilitado */
+button.memory {
+    background-color: #008CBA; /* Azul claro para a memória */
+}
+
+button.memory:hover {
+    background-color: #007bb5;
+}
+
+button.clear {
+    background-color: #f44336; /* Vermelho para o botão 'C' */
+}
+
+button.clear:hover {
+    background-color: #e41f17;
+}
+
+button.decimal {
+    background-color: #607d8b; /* Cor diferente para o ponto decimal */
+}
+
+button.decimal:hover {
+    background-color: #455a64;
 }
