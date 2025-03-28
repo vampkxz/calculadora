@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Detalhada</title>
+    <title>Calculadora Lenovo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="calculator">
         <div class="display">
-            <input type="text" id="display" disabled />
+            <input type="text" id="screen" disabled>
         </div>
         <div class="buttons">
-            <!-- Botões para Memória -->
-            <button class="btn clear" onclick="clearDisplay()">C</button>
-            <button class="btn memory" onclick="memoryRecall()">MR</button>
-            <button class="btn memory" onclick="memoryClear()">MC</button>
-            <button class="btn memory" onclick="memoryStore()">MS</button>
-
-            <!-- Operações -->
-            <button class="btn operator" onclick="setOperation('%')">%</button>
-            <button class="btn operator" onclick="setOperation('√')">√</button>
-            <button class="btn operator" onclick="setOperation('^')">^</button>
-            <button class="btn operator" onclick="setOperation('/')">/</button>
-
-            <!-- Números -->
-            <button class="btn" onclick="appendNumber('7')">7</button>
-            <button class="btn" onclick="appendNumber('8')">8</button>
-            <button class="btn" onclick="appendNumber('9')">9</button>
-            <button class="btn operator" onclick="setOperation('*')">*</button>
-
-            <button class="btn" onclick="appendNumber('4')">4</
+            <button class="button" onclick="appendToScreen('7')">7</button>
+            <button class="button" onclick="appendToScreen('8')">8</button>
+            <button class="button" onclick="appendToScreen('9')">9</button>
+            <button class="button operator" onclick="appendToScreen('/')">/</button>
+            
+            <button class="button" onclick="appendToScreen('4')">4</button>
+            <button class="button" onclick="appendToScreen('5')">5</button>
+            <button class="button" onclick="appendToScreen('6')">6</button>
+            <button class="button operator" onclick="appendToScreen('*')">*</button>
+            
+            <button class="button" onclick="appendToScreen('1')">1</button>
+            <button class="button" onclick="appendToScreen('2')">2</button>
+            <button class="button" onclick="appendToScreen('3')">3</button>
+            <button class="button operator" onclick="appendToScreen('-')">-</button>
+            
+            <button class="button" onclick="appendToScreen('0')">0</button>
+            <button class="button" onclick="appendToScreen('.')">.</button>
+            <button class="button equals" onclick="calculateResult()">=</button>
+            <button class="button operator" onclick="appendToScreen('+')">+</button>
+            
+            <button class="button clear" onclick="clearScreen()">C</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
