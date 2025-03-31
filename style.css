@@ -22,8 +22,7 @@ body {
   padding: 3em;
 }
 
-#calc {
-    width: 400px;
+#calc {    width: 400px;
     padding: .5em;
     background-color: #f1f1f1;
     color: #000;
